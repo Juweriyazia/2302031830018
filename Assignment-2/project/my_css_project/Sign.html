@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Collaborative Playlist</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking external CSS -->
+    <style>
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff; /* White Background */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #2C3E50; /* Dark Blue */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #1A252F; /* Slightly darker blue */
+    border-radius: 20px;
+}
+
+/* Sign-Up Container */
+.signup-container {
+    background-color: #5DADE2; /* Light Blue */
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.signup-container h2 {
+    color: #2C3E50; /* Dark Blue */
+    font-weight: 600;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    color: #2C3E50;
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #3498DB;
+}
+
+/* Alternate Option (Phone Sign-Up) */
+.alternate-option {
+    font-size: 12px;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.alternate-option:hover {
+    text-decoration: underline;
+}
+
+/* Next Button */
+button {
+    background-color: #2C3E50; /* Dark Blue */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1A252F;
+}
+
+/* Divider */
+.divider {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.divider span {
+    background: white;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+    margin: 5px;
+}
+
+/* Social Sign-Up Buttons */
+.google-signup, .apple-signup {
+    background-color: #ffffff;
+    color: #2C3E50;
+    border: 1px solid #ccc;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.google-signup img, .apple-signup img {
+    width: 20px;
+    height: 20px;
+}
+
+.google-signup:hover, .apple-signup:hover {
+    background-color: #f0f0f0;
+}
+
+/* Footer */
+footer {
+    background-color: #2C3E50;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="C:\Users\juwer\OneDrive\Desktop\my css project\clg.html">Home</a></li>
+            <li><a href="C:\Users\juwer\OneDrive\Desktop\my css project\explore.html">Explore</a></li>
+            <li><a href="C:\Users\juwer\OneDrive\Desktop\my css project\friends.html">Friends</a></li>
+            <li><a href="C:\Users\juwer\OneDrive\Desktop\my css project\playlist.html">Create Playlist</a></li>
+            <li><a href="C:\Users\juwer\OneDrive\Desktop\my css project\login.html">Login</a></li>
+            <li><a href="C:\Users\juwer\OneDrive\Desktop\my css project\setting.html">Settings</a></li>
+            <li><a href="C:\Users\juwer\OneDrive\Desktop\my css project\about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sign-Up Form Container -->
+    <div class="signup-container">
+        <h2>Sign up to start listening</h2>
+        <form>
+            <label for="email">Email address</label>
+            <input type="email" id="email" placeholder="name@domain.com" required>
+
+           <!--<p class="alternate-option">use phone number instead</p>-->
+
+            <button type="submit">Next</button>
+
+            <div class="divider">
+                <span>OR</span>
+            </div>
+
+            <!-- Social Sign-Up Options -->
+            <button class="google-signup">
+                <img src="c:\Users\juwer\OneDrive\Desktop\google.png" alt="Google Logo"> Sign up with Google
+            </button>
+
+            <button class="apple-signup">
+                <img src="c:\Users\juwer\OneDrive\Desktop\apple-icon-4.png" alt="Apple Logo"> Sign up with Apple
+            </button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        @2025 Collaborative Playlist App
+    </footer>
+
+</body>
+</html>
